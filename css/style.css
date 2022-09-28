@@ -1,0 +1,128 @@
+:root {
+  --cinza-escurto: rgb(20, 21, 25);
+  --cinza-medio: rgb(32, 39, 49);
+  --cinza-claro: rgb(38, 47, 56);
+  --cinza-muito-claro: rgb(126, 134, 143);
+  --laranja: rgb(252, 118, 19);
+
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cinza-escurto);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.div-avalicao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*se o espaçamento ficar estranho o erro esta aqui   */
+
+  background-color: var(--cinza-medio);
+
+  border-radius: 20px;
+
+  padding: 1.5em;
+
+  width: 300px;
+  height: 50vh;
+}
+
+.div-agradecimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* se o espaçamento ficar estranho o erro esta aqui   */
+  align-items: center;
+
+  background-color: var(--cinza-medio);
+
+  border-radius: 20px;
+
+  padding: 1.5em;
+
+  width: 300px;
+  height: 50vh;
+}
+
+.div-img-estrela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cinza-claro);
+
+  border-radius: 999px;
+
+  width: 40px;
+  height: 40px;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.titulo {
+  color:  whitesmoke;
+  font-size: 1.8em;
+}
+
+.texto {
+  color: var(--cinza-muito-claro);
+  font-size: 1.2em;
+  line-height: 25px;
+}
+
+.centro {
+  text-align: center;
+}
+
+.mostraNota {
+  background-color: var(--cinza-claro);
+  color: var(--laranja);
+
+  border-radius: 25px;
+
+  padding: .5em 1em .5em 1em;
+  font-weight: 700;
+}
+
+.bnt-enviar {
+  background-color: var(--laranja);
+  color: whitesmoke;
+
+  border: none;
+  border-radius: 25px;
+
+  font-size: 1.2em;
+  font-weight: 400;
+
+  margin-top: 2em;
+
+  width: 100%;
+  height: 40px;
+}
+
+.bnt-enviar:hover {
+  background-color: whitesmoke;
+  color: var(--laranja);
+  cursor: pointer;
+
+  box-shadow: 0px 0px 10px var(--laranja);
+}
+
+.bnt-enviar:active {
+  transform: translateY(5px);
+}
+
+.invisivel {
+  display: none;
+}

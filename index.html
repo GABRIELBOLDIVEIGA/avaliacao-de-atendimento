@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/estilo-form.css" />
+
+    <title>Interactive rating component</title>
+  </head>
+
+  <body>
+    <div class="div-avalicao">
+      <div class="div-img-estrela">
+        <img src="images/icon-star.svg" alt="" />
+      </div>
+
+      <h2 class="titulo">Como nos saímos ?</h2>
+      <p class="texto">
+        Por favor, deixe-nos saber como fizemos com sua solicitação de suporte. Todo o feedback é
+        apreciado para nos ajudar a melhorar a nossa oferta!
+      </p>
+
+      <form id="input-option">
+        <div class="radio">
+          <label for="n1">
+            <input type="radio" name="nota" id="n1" />
+            <span>1</span>
+          </label>
+        </div>
+
+        <div class="radio">
+          <label for="n2"
+            ><input type="radio" name="nota" id="n2" />
+            <span>2</span>
+          </label>
+        </div>
+
+        <div class="radio">
+          <label for="n3">
+            <input type="radio" name="nota" id="n3" />
+            <span>3</span>
+          </label>
+        </div>
+
+        <div class="radio">
+          <label for="n4">
+            <input type="radio" name="nota" id="n4" />
+            <span>4</span>
+          </label>
+        </div>
+
+        <div class="radio">
+          <label for="n5">
+            <input type="radio" name="nota" id="n5" />
+            <span>5</span>
+          </label>
+        </div>
+
+        <input class="bnt-enviar" id="enviar" type="submit"></input>
+      </form>
+    </div>
+
+    <div class="div-agradecimento invisivel">
+      <div class="div-img">
+        <img src="images/illustration-thank-you.svg" alt="" />
+      </div>
+
+      <span id="mNota" class="mostraNota"></span>
+
+      <h2 class="titulo">Obrigado!</h2>
+      <p class="texto centro">
+        Agradecemos que você reserve um tempo para dar uma classificação. 
+        Se você alguma vez precisar de
+        mais suporte, não hesite em entrar em contato!
+      </p>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/View.js"></script>
+  </body>
+</html>
